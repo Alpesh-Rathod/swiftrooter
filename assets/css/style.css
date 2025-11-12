@@ -1691,6 +1691,7 @@ title {
 
 .services__details-content .section__header {
   width: 75%;
+  padding-right: 15px;
 }
 
 .services__details-content .emergency__contact {
@@ -1901,7 +1902,15 @@ title {
 
 /* Tablet Landscape - 992px to 1023px */
 @media (max-width: 1024px) {
-
+.services__details-content .section__header {
+    width: 70%;
+}
+.services__details-content .emergency__contact {
+    width: 30%;
+}
+.services__details-grid.hero__banner--section .form__container {
+  padding: 0px;
+}
   .contact__us--grid .contact__form .section__header,
   .contact__us--grid .get-in-touch .section__header {
     text-align: left;
@@ -2039,6 +2048,11 @@ title {
   .footer .footer__contact-grid {
     gap: 30px 40px;
   }
+
+  .mt-100 {
+    margin-top: 80px;
+  }
+
 }
 
 /* Tablet Portrait & Mobile Landscape - 768px to 991px */
@@ -2062,6 +2076,7 @@ title {
 
   .services__details-content .emergency__contact {
     justify-content: flex-start;
+    margin-bottom: 15px;
   }
 
   .services__section .services__grid {
@@ -2255,6 +2270,7 @@ title {
     gap: 30px;
   }
 
+  .services__details-section,
   .privacy__policy--section,
   .contact__us--section,
   .about__swiftrooter--section {
@@ -2533,7 +2549,7 @@ title {
   }
 
   .footer .footer__main {
-    padding: 40px 0;
+    padding: 40px 0px 20px;
   }
 
   .footer .footer__cta-section {
@@ -3039,7 +3055,7 @@ title {
   }
 
   .footer .footer__main {
-    padding: 30px 0;
+    padding: 30px 0 0;
   }
 
   .footer .footer__cta-title {
