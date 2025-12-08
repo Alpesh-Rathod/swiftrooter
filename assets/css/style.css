@@ -200,6 +200,23 @@ title {
   height: auto;
 }
 
+.header__main .navbar .brand_logo {
+  font-size: 28px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.header__main .navbar .brand_logo span:first-child {
+  color: #ef4444;
+  font-weight: bold;
+}
+
+.header__main .navbar .brand_logo span:last-child {
+  color: #3b82f6;
+  font-weight: bold;
+}
+
 .header__main .navbar nav {
   display: flex;
   align-items: center;
@@ -1154,6 +1171,23 @@ title {
   gap: 20px;
 }
 
+.footer .footer-brand .footer-brand__logo {
+  font-size: 28px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.footer .footer-brand .footer-brand__logo span:first-child {
+  color: #ef4444;
+  font-weight: bold;
+}
+
+.footer .footer-brand .footer-brand__logo span:last-child {
+  color: #3b82f6;
+  font-weight: bold;
+}
+
 .footer .footer-brand__logo img {
   width: 140px;
   height: auto;
@@ -1348,28 +1382,32 @@ title {
 
 /* About Page CSS Start */
 
-.about__swiftrooter--section {
+.about__Qnixrooter--section {
   width: 100%;
   position: relative;
   padding-top: 160px;
 }
 
-.about__swiftrooter--section .about__swiftrooter--grid {
+.about__Qnixrooter--section .about__Qnixrooter--grid {
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
 }
 
-.about__swiftrooter--section .section__header .desc {
+.about__Qnixrooter--section .about__Qnixrooter--grid .about__images--right {
+  margin-top: 4rem;
+}
+
+.about__Qnixrooter--section .section__header .desc {
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
   padding-bottom: 36px;
 }
 
-.about__swiftrooter--section .about__images--right img,
-.about__swiftrooter--section .section__header img {
+.about__Qnixrooter--section .about__images--right img,
+.about__Qnixrooter--section .section__header img {
   border-radius: 16px;
 }
 
@@ -1902,15 +1940,18 @@ title {
 
 /* Tablet Landscape - 992px to 1023px */
 @media (max-width: 1024px) {
-.services__details-content .section__header {
+  .services__details-content .section__header {
     width: 70%;
-}
-.services__details-content .emergency__contact {
+  }
+
+  .services__details-content .emergency__contact {
     width: 30%;
-}
-.services__details-grid.hero__banner--section .form__container {
-  padding: 0px;
-}
+  }
+
+  .services__details-grid.hero__banner--section .form__container {
+    padding: 0px;
+  }
+
   .contact__us--grid .contact__form .section__header,
   .contact__us--grid .get-in-touch .section__header {
     text-align: left;
@@ -1921,7 +1962,7 @@ title {
     text-align: center;
   }
 
-  .about__swiftrooter--section .section__header .desc {
+  .about__Qnixrooter--section .section__header .desc {
     font-size: 16px;
     line-height: 22px;
   }
@@ -2058,7 +2099,11 @@ title {
 /* Tablet Portrait & Mobile Landscape - 768px to 991px */
 @media (max-width: 991px) {
 
-  .about__swiftrooter--section .about__swiftrooter--grid {
+  .about__Qnixrooter--section .about__Qnixrooter--grid .about__images--right {
+    margin-top: 2rem;
+  }
+
+  .about__Qnixrooter--section .about__Qnixrooter--grid {
     grid-template-columns: 1fr;
     /* Stack content */
     gap: 30px;
@@ -2273,15 +2318,15 @@ title {
   .services__details-section,
   .privacy__policy--section,
   .contact__us--section,
-  .about__swiftrooter--section {
+  .about__Qnixrooter--section {
     padding-top: 120px;
   }
 
-  .about__swiftrooter--section .section__header {
+  .about__Qnixrooter--section .section__header {
     margin-bottom: 0px;
   }
 
-  .about__swiftrooter--section .section__header .desc {
+  .about__Qnixrooter--section .section__header .desc {
     font-size: 15px;
     line-height: 22px;
   }
@@ -2679,11 +2724,11 @@ title {
     gap: 16px;
   }
 
-  .about__swiftrooter--section {
+  .about__Qnixrooter--section {
     padding-top: 100px;
   }
 
-  .about__swiftrooter--section .section__header .desc {
+  .about__Qnixrooter--section .section__header .desc {
     font-size: 14px;
   }
 

@@ -1,24 +1,24 @@
-# Swift Rooter
+# Qnix Rooter
 
 **Author:** Alpesh Rathod  
-**Last Updated:** November 04, 2025
+**Last Updated:** November 08, 2025
 
 ---
 
 ## 🧩 Template Name
-**Swift Rooter**
+**Qnix Rooter**
 
 ---
 
 ## 📝 Description
-Swift Rooter is a modern and fully responsive **plumbing and maintenance service website template** built using **HTML5**, **CSS3**, and **vanilla JS**.  
+Qnix Rooter is a modern and fully responsive **plumbing and maintenance service website template** built using **HTML5**, **CSS3**, and **vanilla JS**.  
 This template is ideal for plumbing companies, repair services, and maintenance businesses looking for a clean and professional online presence.
 
 ---
 
 ## 📁 Folder Structure
 ```
-Swift_Rooter/
+Qnix_Rooter/
     index.html
     services.html
     about-us.html
@@ -29,11 +29,6 @@ Swift_Rooter/
         fonts/
         images/
             [All image assets including team, services, and icons]
-            logo/
-                favicon.jpeg
-                favicon.png
-                footer-logo.png
-                logo.jpeg
 ```
 
 ---
