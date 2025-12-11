@@ -310,11 +310,20 @@ title {
   text-align: center;
   width: 100%;
   max-width: 780px;
+  z-index: 3;
+}
+
+.hero__banner--section .hero__bgimages::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 2;
 }
 
 .hero__banner--section .hero__bgimages img {
   width: 100%;
-  height: 1024px;
+  height: 1080px;
   object-fit: cover;
   object-position: center;
 }
@@ -324,11 +333,11 @@ title {
   line-height: 66px;
   font-weight: 700;
   padding-bottom: 20px;
-  color: var(--lightblack);
+  color: var(--white);
 }
 
 .hero__banner--section .hero__caption .text-red {
-  color: #e1251b;
+  color: var(--primary-color);
 }
 
 .hero__banner--section .hero__caption .text-blue {
@@ -338,8 +347,8 @@ title {
 .hero__banner--section .hero__caption p {
   font-size: 18px;
   line-height: 24px;
-  font-weight: 600;
-  color: #333333;
+  font-weight: 400;
+  color: var(--white);
   padding-bottom: 30px;
 }
 
@@ -371,10 +380,11 @@ title {
 .hero__banner--section .membership__container .member__text h5 {
   font-size: 20px;
   font-weight: 600;
+  color: var(--white);
 }
 
-.hero__banner--section .membership__container .member__text h5 span {
-  color: var(--primary-color);
+.hero__banner--section .membership__container .member__text span {
+  color: var(--white);
 }
 
 .hero__banner--section .membership__container .member__text {
@@ -391,6 +401,7 @@ title {
   transform: translateX(-50%);
   max-width: 1200px;
   width: 100%;
+  z-index: 11;
 }
 
 .hero__banner--section .form__container .contactform {
@@ -2205,7 +2216,7 @@ title {
   }
 
   .hero__banner--section .hero__caption {
-    top: 15%;
+    top: 21%;
     max-width: 90%;
   }
 
@@ -2669,6 +2680,10 @@ title {
 
 /* Mobile Small - 480px and below */
 @media (max-width: 480px) {
+  .hero__banner--section .hero__caption .text-blue,
+  .hero__banner--section .hero__caption .text-red {
+    color: #ef4444;
+}
   .auto-container {
     padding: 0 15px;
   }
