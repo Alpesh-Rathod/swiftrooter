@@ -133,7 +133,7 @@ title {
   color: var(--lightgrey);
   font-size: 16px;
   line-height: 24px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .pt-80 {
@@ -1712,6 +1712,7 @@ title {
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
+  margin-bottom: 40px;
 }
 
 .services__details-content .section__header .desc {
@@ -1732,7 +1733,7 @@ title {
 
 .services__details-content {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 20px 0 0;
@@ -1750,6 +1751,9 @@ title {
   border: 1px solid #e6e9ee;
   border-radius: 16px;
   box-shadow: 0 0 3px #1414141c;
+  position: sticky;
+  top: 110px;
+  margin-bottom: 20px;
 }
 
 .services__details-content .emergency__contact .contact__top-sec {
@@ -1757,6 +1761,10 @@ title {
   align-items: center;
   gap: 15px;
   padding-bottom: 15px;
+}
+
+.services__details-content .emergency__contact .contact__top-sec.mt-20 {
+  margin-top: 20px;
 }
 
 .services__details-content .emergency__contact .contact__top-sec .contact__icon-box {
@@ -2680,10 +2688,12 @@ title {
 
 /* Mobile Small - 480px and below */
 @media (max-width: 480px) {
+
   .hero__banner--section .hero__caption .text-blue,
   .hero__banner--section .hero__caption .text-red {
     color: #ef4444;
-}
+  }
+
   .auto-container {
     padding: 0 15px;
   }

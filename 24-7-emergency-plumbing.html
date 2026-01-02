@@ -72,11 +72,13 @@
                     </svg>Back to Services</a>
             </div>
             <div class="services__details-grid hero__banner--section" data-aos="fade-up" data-aos-duration="1000">
-                <div class="services__main-images">
-                    <img src="assets/images/services/services-man-full-1.png" alt="services man" />
-                </div>
+
                 <div class="services__details-content">
+
                     <div class="section__header">
+                        <div class="services__main-images">
+                            <img src="assets/images/services/services-man-1.jpg" alt="services man" />
+                        </div>
                         <span class="sub-title">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false">
                                 <g weight="regular">
@@ -104,6 +106,19 @@
                         <div class="call-btn">
                             <a href="callto:+1 [303] 873-2983" class="btn">Call Now</a>
                         </div>
+                        <div class="contact__top-sec mt-20">
+                            <div class="contact__icon-box">
+                                <img src="assets/images/contact-email.png">
+                            </div>
+                            <div class="contact__text-box">
+                                <p>Emergency Email</p>
+                                <h4>hello@Qnixrooter.com</h4>
+                            </div>
+                        </div>
+                        <div class="call-btn">
+                            <a href="mailto:hello@Qnixrooter.com" class="btn">Email Now</a>
+                        </div>
+
                     </div>
                 </div>
                 <div class="form__container">
@@ -165,8 +180,7 @@
 
                     <div class="video-container">
                         <video id="videoPlayer">
-                            <source src="https://framerusercontent.com/assets/JlxORnim9G3MFRZcSpQmqWHVNOY.mp4"
-                                type="video/mp4">
+                            <source src="assets/images/services/JlxORnim9G3MFRZcSpQmqWHVNOY.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                         <div class="play-overlay" id="playOverlay">
@@ -356,7 +370,6 @@
         </div>
     </section>
     <!-- Faqs section End -->
-
     <!-- Footer Section Start -->
     <footer class="footer" data-aos="fade-up" data-aos-duration="1200">
         <div class="footer__container">
@@ -378,7 +391,7 @@
                     <ul class="footer-column__list">
                         <li><a href="index.html" class="footer-column__link">Home</a></li>
                         <li><a href="index.html#location__section" class="footer-column__link">Location</a></li>
-                        <li><a href="index.html#services" class="footer-column__link">Services</a></li>
+                        <li><a href="services.html" class="footer-column__link">Services</a></li>
                         <li><a href="index.html#faqs" class="footer-column__link">FAQ</a></li>
                     </ul>
                 </div>
@@ -460,7 +473,8 @@
                         <div class="contact-info">
                             <h4 class="contact-info__label">Email</h4>
                             <p> <a href="mailto:hallo.test@gmail.com"
-                                    class="footer-column__link">hallo.test@gmail.com</a></p>
+                                    class="footer-column__link">hallo.test@gmail.com</a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -490,30 +504,6 @@
         AOS.init();
     </script>
 
-    <script>
-        const video = document.getElementById('videoPlayer');
-        const playOverlay = document.getElementById('playOverlay');
-
-        playOverlay.addEventListener('click', function () {
-            video.setAttribute('controls', 'controls');
-            video.play();
-            playOverlay.classList.add('hidden');
-        });
-
-        video.addEventListener('play', function () {
-            playOverlay.classList.add('hidden');
-        });
-
-        video.addEventListener('pause', function () {
-            if (video.currentTime < video.duration) {
-                playOverlay.classList.remove('hidden');
-            }
-        });
-
-        video.addEventListener('ended', function () {
-            playOverlay.classList.remove('hidden');
-        });
-    </script>
 
 </body>
 

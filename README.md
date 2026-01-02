@@ -1,7 +1,7 @@
 # Qnix Rooter
 
 **Author:** Alpesh Rathod  
-**Last Updated:** November 08, 2025
+**Last Updated:** Jan 02, 2026
 
 ---
 

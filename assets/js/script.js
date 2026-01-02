@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     // Mobile Navigation Js Start
     const navbarToggle = document.getElementById('navbarToggle');
     const navMenu = document.getElementById('navMenu');
@@ -114,6 +114,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // FAQ Accordion Functionality End
 
+    // Video Playback Functionality Start
+    
+    const video = document.getElementById('videoPlayer');
+    const playOverlay = document.getElementById('playOverlay');
+
+    playOverlay.addEventListener('click', function () {
+        video.setAttribute('controls', 'controls');
+        video.play();
+        playOverlay.classList.add('hidden');
+    });
+
+    video.addEventListener('play', function () {
+        playOverlay.classList.add('hidden');
+    });
+
+    video.addEventListener('pause', function () {
+        if (video.currentTime < video.duration) {
+            playOverlay.classList.remove('hidden');
+        }
+    });
+
+    video.addEventListener('ended', function () {
+        playOverlay.classList.remove('hidden');
+    });
+
+
+ 
 
 });
 
