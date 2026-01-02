@@ -23,6 +23,7 @@ Qnix_Rooter/
     services.html
     about-us.html
     contact-us.html
+    privacy-policy.html
     assets/
         css/
             style.css
