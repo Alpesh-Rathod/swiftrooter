@@ -139,12 +139,6 @@ document.addEventListener('DOMContentLoaded', () => {
         playOverlay.classList.remove('hidden');
     });
 
-<<<<<<< HEAD
-
- 
-=======
->>>>>>> 7f6a2adc0d9e0916f8db657a0009abed8a439ac0
-
 });
 
 
