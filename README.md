@@ -71,4 +71,4 @@ This template uses a responsive grid system and component-based structure powere
 
 ---
 
-© 2025 Alpesh Rathod. All Rights Reserved.
+© 2026 Alpesh Rathod. All Rights Reserved.
