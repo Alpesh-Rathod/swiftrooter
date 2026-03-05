@@ -957,6 +957,9 @@ title {
   position: relative;
 }
 
+.faqs__section .faqs__grid .section__header .main-title {
+  margin-bottom: 24px;
+}
 
 .faqs__section .faqs__grid .section__header {
   align-items: flex-start;
@@ -2113,13 +2116,25 @@ title {
     margin-top: 80px;
   }
 
+  .our__location--section .our__location--grid .our__location--content .location__text-box h2 {
+    font-size: 28px;
+    line-height: 32px;
+    padding-bottom: 15px;
+  }
 }
 
 /* Tablet Portrait & Mobile Landscape - 768px to 991px */
 @media (max-width: 991px) {
 
+  .services__details-section,
+  .privacy__policy--section,
+  .contact__us--section,
+  .about__Qnixrooter--section {
+    padding-top: 140px;
+  }
+
   .about__Qnixrooter--section .about__Qnixrooter--grid .about__images--right {
-    margin-top: 2rem;
+    margin-top: 0rem;
   }
 
   .about__Qnixrooter--section .about__Qnixrooter--grid {
@@ -2316,6 +2331,14 @@ title {
     grid-template-columns: 1fr;
   }
 
+  .services__details-content .section__header .desc {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .plumbing__expert--section .section__header {
+    gap: 0px;
+  }
 }
 
 /* Mobile (768px and below) */
@@ -2439,10 +2462,6 @@ title {
 
   .services__section .service-card__title {
     font-size: 16px;
-  }
-
-  .services__section .service-card__description {
-    font-size: 13px;
   }
 
   .services__section .service-card__image {
@@ -2708,6 +2727,8 @@ title {
 
   .contact__us--section .section__header h2 {
     font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 8px;
   }
 
   .contact__us--grid .contact-us-innner {
@@ -2720,7 +2741,8 @@ title {
 
   .contact__us--grid .get-in-touch .section__header p,
   .contact__us--grid .contact__form .section__header p {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 22px;
   }
 
   .contact__us--grid .contact-us-innner .contact-us-innner-text p {
@@ -2886,14 +2908,6 @@ title {
     font-size: 13px;
   }
 
-  .services__section .service-card__title {
-    font-size: 15px;
-  }
-
-  .services__section .service-card__description {
-    font-size: 12px;
-  }
-
   .services__section .service-card__image {
     height: 240px;
   }
@@ -2926,7 +2940,7 @@ title {
 
   /* Service Steps */
   .service__step--section .service__step--grid .step__item {
-    padding: 16px 12px;
+    padding: 16px 4px;
   }
 
   .service__step--section .service__step--grid .step__item .step__icon-box {
@@ -2945,9 +2959,14 @@ title {
     margin-bottom: 10px;
   }
 
+  .services__details-content .emergency__contact .contact__text-box h4,
   .service__step--section .service__step--grid .step__item .step__content-box p {
     font-size: 14px;
     line-height: 20px;
+  }
+
+  .hero__banner--section .membership__container .member__text span {
+    font-size: 14px;
   }
 
   /* Trusted Plumbing */
@@ -2976,8 +2995,8 @@ title {
   }
 
   .trusted__plumbing--section .trusted__plumbing--content .trusted__plumbing--text h2 {
-    font-size: 28px;
-    line-height: 34px;
+    font-size: 24px;
+    line-height: 32px;
   }
 
   .trusted__plumbing--section .trusted__plumbing--paraghaph p {
@@ -3036,6 +3055,7 @@ title {
 
   .faqs__accordion--box .faq-question h3 {
     font-size: 15px;
+    line-height: 24px;
     margin-right: 15px;
   }
 
@@ -3087,10 +3107,10 @@ title {
   }
 
   .our__location--section .our__location--grid .our__location--content .location__text-box h2 {
-    font-size: 24px;
+    font-size: 20px;
     padding-bottom: 12px;
   }
-
+.contact__us--grid .contact-us-innner .contact-us-innner-right .btn.btn-primary,
   .our__location--section .our__location--grid .our__location--content .location__text-box p {
     font-size: 14px;
     line-height: 20px;
@@ -3129,7 +3149,7 @@ title {
   }
 
   .footer .footer__cta-title {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .footer .footer__cta-description {
@@ -3160,49 +3180,5 @@ title {
     font-size: 13px;
     line-height: 20px;
   }
-}
 
-/* Mobile Extra Small - 360px and below */
-@media (max-width: 360px) {
-  .auto-container {
-    padding: 0 10px;
-  }
-
-  /* Header */
-  .header__main .navbar .brand_logo {
-    width: 100px;
-  }
-
-  /* Hero Banner */
-  .hero__banner--section .hero__bgimages img {
-    height: 550px;
-  }
-
-  .hero__banner--section .hero__caption h1 {
-    font-size: 22px;
-    line-height: 28px;
-  }
-
-  .hero__banner--section .hero__caption p {
-    font-size: 13px;
-  }
-
-  .hero__banner--section .membership__container .member__images .images_list img {
-    width: 34px;
-    height: 34px;
-  }
-
-  .hero__banner--section .membership__container .member__text h5 {
-    font-size: 13px;
-  }
-
-  /* Services */
-  .services__section .services__title {
-    font-size: 22px;
-  }
-
-  /* Footer */
-  .footer .footer__cta-title {
-    font-size: 24px;
-  }
 }
