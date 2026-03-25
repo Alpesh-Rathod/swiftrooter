@@ -1671,7 +1671,6 @@ title {
   font-size: 16px;
   color: var(--lightgrey);
   line-height: 24px;
-  font-weight: 500;
 }
 
 .privacy__policy-grid .privacy__policy-item a {
@@ -2173,7 +2172,7 @@ title {
 
   .header__main .navbar__toggle {
     display: flex;
-    margin-right: 60px;
+    margin-right: 6px;
   }
 
   .header__main .navbar nav {
@@ -2707,6 +2706,9 @@ title {
 
 /* Mobile Small - 480px and below */
 @media (max-width: 480px) {
+  .plumbing__expert--card .plumbing__expert--details .badge-rating-sec .badge-completed .badge {
+    font-size: 14px;
+  }
 
   .hero__banner--section .hero__caption .text-blue,
   .hero__banner--section .hero__caption .text-red {
@@ -2800,10 +2802,6 @@ title {
     padding: 0px;
   }
 
-  .header__main .navbar__toggle {
-    margin-right: 68px;
-  }
-
   .header__main .navbar {
     padding: 16px 12px;
   }
@@ -2841,7 +2839,11 @@ title {
   }
 
   .hero__banner--section .hero__caption {
-    top: 12%;
+    top: 14%;
+  }
+
+  .why__choose--section .why__choose--grid {
+    gap: 0;
   }
 
   .hero__banner--section .hero__caption h1 {
@@ -2901,11 +2903,6 @@ title {
 
   .services__section .services__title {
     font-size: 24px;
-  }
-
-  .services__section .services__tab {
-    padding: 8px 16px;
-    font-size: 13px;
   }
 
   .services__section .service-card__image {
@@ -3018,7 +3015,7 @@ title {
     width: 45px;
     height: 45px;
   }
-
+.faqs__accordion--box .faq-item.active .faq-icon,
   .testimonials__section .testimonial__author .author__info h4 {
     font-size: 15px;
   }
@@ -3110,7 +3107,8 @@ title {
     font-size: 20px;
     padding-bottom: 12px;
   }
-.contact__us--grid .contact-us-innner .contact-us-innner-right .btn.btn-primary,
+
+  .contact__us--grid .contact-us-innner .contact-us-innner-right .btn.btn-primary,
   .our__location--section .our__location--grid .our__location--content .location__text-box p {
     font-size: 14px;
     line-height: 20px;
@@ -3140,10 +3138,6 @@ title {
     font-size: 18px;
   }
 
-  .footer .footer-column__link {
-    font-size: 14px;
-  }
-
   .footer .footer__main {
     padding: 30px 0 0;
   }
@@ -3153,7 +3147,6 @@ title {
   }
 
   .footer .footer__cta-description {
-    font-size: 13px;
     margin-bottom: 20px;
   }
 
