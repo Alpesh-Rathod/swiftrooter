@@ -1,141 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>QnixRooter Email Signature</title>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
-<style>
-  body { background: #f0f4f8; font-family: 'Source Sans 3', sans-serif; padding: 40px 20px; display: flex; flex-direction: column; align-items: center; gap: 40px; }
-  h2 { font-family: 'Oswald', sans-serif; color: #0a1628; font-size: 22px; margin-bottom: 8px; }
-  .preview-label { font-size: 13px; color: #6b7a8d; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 1.5px; }
-
-  /* ===== EMAIL SIGNATURE STYLES ===== */
-  .sig-wrapper { background: #fff; border-radius: 4px; overflow: hidden; max-width: 580px; width: 100%; font-family: 'Source Sans 3', Georgia, sans-serif; box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
-  
-  .sig-accent-bar { height: 4px; background: linear-gradient(90deg, #0a1628 0%, #1a3a6b 50%, #e07b1f 100%); }
-  
-  .sig-body { display: flex; gap: 0; }
-  
-  .sig-left { background: #0a1628; padding: 24px 24px; display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 130px; gap: 10px; }
-  .sig-avatar { width: 64px; height: 64px; background: #e07b1f; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Oswald', sans-serif; font-size: 22px; color: #fff; font-weight: 700; border: 3px solid rgba(255,255,255,0.15); }
-  .sig-logo-text { font-family: 'Oswald', sans-serif; font-size: 13px; color: rgba(255,255,255,0.7); font-weight: 400; letter-spacing: 1px; margin-top: 4px; }
-  .sig-logo-brand { font-family: 'Oswald', sans-serif; font-size: 14px; color: #fff; font-weight: 700; letter-spacing: 0.5px; }
-  .sig-logo-brand span { color: #e07b1f; }
-
-  .sig-right { padding: 22px 24px; flex: 1; border-left: 1px solid #edf2f7; }
-  .sig-name { font-family: 'Oswald', sans-serif; font-size: 22px; font-weight: 700; color: #0a1628; line-height: 1; margin-bottom: 4px; }
-  .sig-title { font-size: 13px; color: #e07b1f; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; }
-  
-  .sig-divider { height: 1px; background: #edf2f7; margin-bottom: 14px; }
-  
-  .sig-contacts { display: flex; flex-direction: column; gap: 7px; margin-bottom: 16px; }
-  .sig-contact-item { display: flex; align-items: center; gap: 8px; }
-  .sig-icon { width: 20px; height: 20px; background: #fef3e8; border-radius: 4px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-  .sig-icon svg { width: 11px; height: 11px; fill: #e07b1f; }
-  .sig-contact-item a, .sig-contact-item span { font-size: 13px; color: #3d5166; text-decoration: none; }
-  .sig-contact-item a:hover { color: #e07b1f; }
-  
-  .sig-badge-row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
-  .sig-badge { background: #f0f4f8; border: 1px solid #dde4ed; color: #0a1628; font-size: 11px; font-family: 'Oswald', sans-serif; font-weight: 600; letter-spacing: 0.5px; padding: 4px 10px; border-radius: 2px; text-transform: uppercase; }
-  .sig-badge.orange { background: #e07b1f; border-color: #e07b1f; color: #fff; }
-
-  .sig-footer { background: #f8fafc; padding: 12px 24px; border-top: 1px solid #edf2f7; display: flex; justify-content: space-between; align-items: center; }
-  .sig-footer-text { font-size: 11px; color: #9aadbe; }
-  .sig-website { font-family: 'Oswald', sans-serif; font-size: 12px; color: #e07b1f; text-decoration: none; letter-spacing: 0.5px; }
-
-  /* PREVIEW ZONE */
-  .preview-container { background: #fff; padding: 32px; border-radius: 8px; max-width: 700px; width: 100%; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
-  .email-preview-header { border-bottom: 1px solid #edf2f7; padding-bottom: 16px; margin-bottom: 16px; }
-  .email-preview-header p { font-size: 13px; color: #6b7a8d; margin-bottom: 4px; }
-  .email-preview-header span { color: #0a1628; font-weight: 600; }
-  .email-body-preview { font-size: 14px; color: #3d5166; line-height: 1.7; margin-bottom: 24px; padding-bottom: 24px; border-bottom: 1px solid #edf2f7; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QnixRooter Email Signature</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
 
-<div style="text-align:center;">
-  <div class="preview-label">Email Signature Preview</div>
-  <h2>QnixRooter — Professional Email Signature</h2>
-</div>
+<body style="background:#f0f4f8;font-family:'Inter',sans-serif;padding:40px 20px;display:flex;flex-direction:column;align-items:center;gap:40px;">
 
-<!-- EMAIL CONTEXT PREVIEW -->
-<div class="preview-container">
-  <div class="email-preview-header">
-    <p><span>From:</span> John Martinez &lt;john.martinez@qnixrooter.com&gt;</p>
-    <p><span>To:</span> customer@email.com</p>
-    <p><span>Subject:</span> Your Service Appointment Confirmation</p>
-  </div>
-  <div class="email-body-preview">
-    Hi there,<br><br>
-    Thank you for choosing QnixRooter! Your appointment has been confirmed for <strong>Thursday, Feb 27 at 10:00 AM</strong>. Our licensed plumber will arrive within the scheduled window. You'll receive a call 30 minutes before arrival.<br><br>
-    If you have any questions or need to reschedule, don't hesitate to reach out.<br><br>
-    Best regards,
+  <div style="text-align:center;">
+    <div style="font-size:13px;color:#6b7a8d;margin-bottom:16px;text-transform:uppercase;letter-spacing:1.5px;">Email Signature Preview</div>
+    <h2 style="color:#0a1628;font-size:22px;margin-bottom:8px;">QnixRooter — Professional Email Signature</h2>
   </div>
 
-  <!-- THE ACTUAL EMAIL SIGNATURE -->
-  <div class="sig-wrapper">
-    <div class="sig-accent-bar"></div>
-    <div class="sig-body">
-      <div class="sig-left">
-        <div class="sig-avatar">JM</div>
-        <div class="sig-logo-brand">Qnix<span>Rooter</span></div>
-        <div class="sig-logo-text">Plumbing Co.</div>
-      </div>
-      <div class="sig-right">
-        <div class="sig-name">John Martinez</div>
-        <div class="sig-title">Senior Plumbing Technician</div>
-        <div class="sig-divider"></div>
-        <div class="sig-contacts">
-          <div class="sig-contact-item">
-            <div class="sig-icon">
-              <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+  <!-- EMAIL CONTEXT PREVIEW -->
+  <div style="background:#fff;padding:32px;border-radius:8px;max-width:700px;width:100%;box-shadow:0 2px 12px rgba(0,0,0,0.06);">
+    <div style="border-bottom:1px solid #edf2f7;padding-bottom:16px;margin-bottom:16px;">
+      <p style="font-size:13px;color:#6b7a8d;margin-bottom:4px;"><span style="color:#0a1628;font-weight:600;">From:</span> John Martinez &lt;john.martinez@qnixrooter.com&gt;</p>
+      <p style="font-size:13px;color:#6b7a8d;margin-bottom:4px;"><span style="color:#0a1628;font-weight:600;">To:</span> customer@email.com</p>
+      <p style="font-size:13px;color:#6b7a8d;margin-bottom:4px;"><span style="color:#0a1628;font-weight:600;">Subject:</span> Your Service Appointment Confirmation</p>
+    </div>
+    <div style="font-size:14px;color:#3d5166;line-height:1.7;margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid #edf2f7;">
+      Hi there,<br><br>
+      Thank you for choosing QnixRooter! Your appointment has been confirmed for <strong>Thursday, Feb 27 at 10:00 AM</strong>. Our licensed plumber will arrive within the scheduled window. You'll receive a call 30 minutes before arrival.<br><br>
+      If you have any questions or need to reschedule, don't hesitate to reach out.<br><br>
+      Best regards,
+    </div>
+
+    <!-- THE ACTUAL EMAIL SIGNATURE -->
+    <div style="background:#fff;border-radius:4px;overflow:hidden;max-width:580px;width:100%;box-shadow:0 2px 20px rgba(0,0,0,0.08);">
+      <div style="height:4px;background:linear-gradient(90deg,#0a1628 0%,#1a3a6b 50%,#e07b1f 100%);"></div>
+      <div style="display:flex;gap:0;">
+        <div style="background:#0a1628;padding:24px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:130px;gap:10px;">
+          <div style="width:64px;height:64px;background:#e07b1f;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;color:#fff;font-weight:700;border:3px solid rgba(255,255,255,0.15);">JM</div>
+          <div style="font-size:14px;color:#fff;font-weight:700;letter-spacing:0.5px;">Qnix<span style="color:#e07b1f;">Rooter</span></div>
+          <div style="font-size:13px;color:rgba(255,255,255,0.7);font-weight:400;letter-spacing:1px;margin-top:4px;">Plumbing Co.</div>
+        </div>
+        <div style="padding:22px 24px;flex:1;border-left:1px solid #edf2f7;">
+          <div style="font-size:22px;font-weight:700;color:#0a1628;line-height:1;margin-bottom:4px;">John Martinez</div>
+          <div style="font-size:13px;color:#e07b1f;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:16px;">Senior Plumbing Technician</div>
+          <div style="height:1px;background:#edf2f7;margin-bottom:14px;"></div>
+          <div style="display:flex;flex-direction:column;gap:7px;margin-bottom:16px;">
+
+            <!-- Phone -->
+            <div style="display:flex;align-items:center;gap:8px;">
+              <div style="width:20px;height:20px;background:#fef3e8;border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                <svg viewBox="0 0 24 24" style="width:11px;height:11px;fill:#e07b1f;">
+                  <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                </svg>
+              </div>
+              <a href="tel:+13038732983" style="font-size:13px;color:#3d5166;text-decoration:none;">+1 (303) 873-2983</a>
             </div>
-            <a href="tel:+13038732983">+1 (303) 873-2983</a>
+
+            <!-- Email -->
+            <div style="display:flex;align-items:center;gap:8px;">
+              <div style="width:20px;height:20px;background:#fef3e8;border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                <svg viewBox="0 0 24 24" style="width:11px;height:11px;fill:#e07b1f;">
+                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+              </div>
+              <a href="mailto:john.martinez@qnixrooter.com" style="font-size:13px;color:#3d5166;text-decoration:none;">john.martinez@qnixrooter.com</a>
+            </div>
+
+            <!-- Address -->
+            <div style="display:flex;align-items:center;gap:8px;">
+              <div style="width:20px;height:20px;background:#fef3e8;border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                <svg viewBox="0 0 24 24" style="width:11px;height:11px;fill:#e07b1f;">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+              </div>
+              <span style="font-size:13px;color:#3d5166;">123 Main Street, Los Angeles, CA 90001</span>
+            </div>
+
+            <!-- Hours -->
+            <div style="display:flex;align-items:center;gap:8px;">
+              <div style="width:20px;height:20px;background:#fef3e8;border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                <svg viewBox="0 0 24 24" style="width:11px;height:11px;fill:#e07b1f;">
+                  <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/>
+                </svg>
+              </div>
+              <span style="font-size:13px;color:#3d5166;">Available 24/7 for Emergencies</span>
+            </div>
+
           </div>
-          <div class="sig-contact-item">
-            <div class="sig-icon">
-              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-            </div>
-            <a href="mailto:john.martinez@qnixrooter.com">john.martinez@qnixrooter.com</a>
-          </div>
-          <div class="sig-contact-item">
-            <div class="sig-icon">
-              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-            </div>
-            <span>123 Main Street, Los Angeles, CA 90001</span>
-          </div>
-          <div class="sig-contact-item">
-            <div class="sig-icon">
-              <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>
-            </div>
-            <span>Available 24/7 for Emergencies</span>
+          <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+            <div style="background:#e07b1f;border:1px solid #e07b1f;color:#fff;font-size:11px;font-weight:600;letter-spacing:0.5px;padding:4px 10px;border-radius:2px;text-transform:uppercase;">24/7 Service</div>
+            <div style="background:#f0f4f8;border:1px solid #dde4ed;color:#0a1628;font-size:11px;font-weight:600;letter-spacing:0.5px;padding:4px 10px;border-radius:2px;text-transform:uppercase;">Licensed &amp; Insured</div>
+            <div style="background:#f0f4f8;border:1px solid #dde4ed;color:#0a1628;font-size:11px;font-weight:600;letter-spacing:0.5px;padding:4px 10px;border-radius:2px;text-transform:uppercase;">Upfront Pricing</div>
           </div>
         </div>
-        <div class="sig-badge-row">
-          <div class="sig-badge orange">24/7 Service</div>
-          <div class="sig-badge">Licensed & Insured</div>
-          <div class="sig-badge">Upfront Pricing</div>
-        </div>
+      </div>
+      <div style="background:#f8fafc;padding:12px 24px;border-top:1px solid #edf2f7;display:flex;justify-content:space-between;align-items:center;">
+        <div style="font-size:11px;color:#9aadbe;">Fast · Reliable · Professional Plumbing Services</div>
+        <a href="https://qnixrooter.netlify.app" style="font-size:12px;color:#e07b1f;text-decoration:none;letter-spacing:0.5px;">qnixrooter.com</a>
       </div>
     </div>
-    <div class="sig-footer">
-      <div class="sig-footer-text">Fast · Reliable · Professional Plumbing Services</div>
-      <a href="https://qnixrooter.netlify.app" class="sig-website">qnixrooter.com</a>
+    <!-- END SIGNATURE -->
+
+  </div>
+
+  <!-- COPY-PASTE CODE BOX -->
+  <div style="max-width:700px;width:100%;background:#1a2d4a;border-radius:8px;padding:24px;">
+    <div style="color:#e07b1f;font-size:12px;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;">Copy this signature HTML for use in Gmail / Outlook</div>
+    <div style="font-size:11px;color:rgba(255,255,255,0.6);line-height:1.6;">
+      Copy the &lt;div style="background:#fff;border-radius:4px..."&gt;...&lt;/div&gt; block<br>
+      and paste into your email client's HTML signature editor.
     </div>
   </div>
-  <!-- END SIGNATURE -->
-
-</div>
-
-<!-- COPY-PASTE CODE BOX -->
-<div style="max-width:700px;width:100%;background:#1a2d4a;border-radius:8px;padding:24px;">
-  <div style="font-family:'Oswald',sans-serif;color:#e07b1f;font-size:12px;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px;">Copy this signature HTML for use in Gmail / Outlook</div>
-  <div style="font-family:monospace;font-size:11px;color:rgba(255,255,255,0.6);line-height:1.6;">
-    Copy the &lt;div class="sig-wrapper"&gt;...&lt;/div&gt; block<br>
-    and paste into your email client's HTML signature editor.
-  </div>
-</div>
 
 </body>
 </html>
