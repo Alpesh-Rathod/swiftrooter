@@ -3015,7 +3015,8 @@ title {
     width: 45px;
     height: 45px;
   }
-.faqs__accordion--box .faq-item.active .faq-icon,
+
+  .faqs__accordion--box .faq-item.active .faq-icon,
   .testimonials__section .testimonial__author .author__info h4 {
     font-size: 15px;
   }
